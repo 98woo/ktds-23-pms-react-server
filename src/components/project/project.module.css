@@ -1,0 +1,542 @@
+div {
+  margin: 0;
+}
+.createAndModify {
+  color: var(--second-color);
+  font-weight: 600;
+}
+.MainInfo {
+  text-align: center;
+  padding: 20px;
+}
+h1 {
+  margin-bottom: 20px;
+}
+.displayInfoFlex {
+  display: flex;
+}
+.info {
+  margin-left: 10px;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  color: var(--second-color);
+  cursor: pointer;
+}
+.info :hover {
+  color: var(--main-color);
+}
+.createContainer {
+  position: relative;
+  width: 800px;
+  /* height: 900px; */
+  top: 5%;
+  left: 20%;
+}
+.createGrid {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 200px 600px;
+  grid-template-rows: 120px 1fr 120px 1fr 120px 300px;
+}
+.modifyGrid {
+  margin-top: 30px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 200px 600px;
+  gap: 27px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 300px;
+}
+
+.readmeContainer {
+  width: 80%;
+  height: 80%;
+  margin-left: 40px;
+  max-width: 100% -20px;
+  max-height: 100% -20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  word-wrap: break-word; /* 긴 단어가 부모 요소 너비를 넘지 않도록 줄바꿈 */
+  word-break: break-word; /* 긴 단어가 부모 요소 너비를 넘지 않도록 줄바꿈 */
+  padding: 10px;
+  font-size: 14px;
+  color: gray;
+  background-color: #f5f5f5;
+  border: 2px solid #f5a49d; /* 녹색 단색 보더 */
+  border-radius: 5px; /* 둥근 모서리 */
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 */
+}
+.contentBoxContainer {
+  width: 500px;
+  height: 300px;
+}
+.contentBox {
+  width: 100%;
+  height: 100%;
+  resize: none;
+}
+.buttonArea {
+  position: absolute;
+  right: 10%;
+  margin-top: 30px;
+}
+
+/* 전체 스크롤바 */
+.readmeContainer::-webkit-scrollbar {
+  width: 10px; /* 스크롤바 너비 */
+  margin-right: 10px;
+}
+
+/* 스크롤바 트랙 */
+.readmeContainer::-webkit-scrollbar-track {
+  border-radius: 10px; /* 둥근 모서리 */
+}
+
+/* 스크롤바 핸들 */
+.readmeContainer::-webkit-scrollbar-thumb {
+  background: #ff6a53; /* 스크롤바 핸들 색상 */
+  border-radius: 10px; /* 둥근 모서리 */
+  border: 2px solid #f1f1f1; /* 핸들 테두리 */
+}
+
+/* 스크롤바 핸들 호버 시 */
+.readmeContainer::-webkit-scrollbar-thumb:hover {
+  background: #ff6a53; /* 스크롤바 핸들 호버 색상 */
+}
+.displayFlex {
+  align-items: center;
+  display: flex;
+  margin-bottom: 10px;
+}
+.displayFlex > svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-left: 40px;
+
+  color: #ff6a53;
+}
+.gridComponent {
+  display: grid;
+  height: 750px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.readme {
+  font-size: 17px;
+  color: var(--second-color);
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 4px 4px -4px var(--main-color);
+  /* border-bottom: 1px solid var(--second-color); */
+  margin-bottom: 10px;
+  justify-content: space-between;
+  align-items: baseline;
+  .flex {
+    gap: 50px;
+    align-items: baseline;
+    display: flex;
+    margin-left: 20px;
+  }
+}
+.headerContainer h4,
+.headerContainer h6 {
+  color: var(--dark-color);
+}
+
+.headerMenu {
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  gap: 54px;
+  margin-right: 100px;
+  cursor: pointer;
+  font-weight: bold;
+  /* align-items:baseline; */
+}
+.headerMenu span {
+  display: inline-block;
+  padding: 3px;
+  border: none;
+  transition: all 10s ease-in;
+}
+.headerMenu span:hover {
+  color: var(--main-color);
+  padding-bottom: 3px;
+  border-bottom: 1.2px solid var(--main-color);
+}
+
+.barContainer {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  height: 40px;
+}
+.barContainerSpan {
+  position: relative;
+  z-index: 1;
+  color: var(--main-color);
+  opacity: 0.7;
+  font-weight: 530;
+}
+
+.bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #f5a49d;
+  text-align: center;
+  line-height: 40px; /* 바의 높이와 동일하게 설정하여 텍스트를 가운데 정렬 */
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  border-radius: 8px 0 0 8px;
+}
+.infoFirst {
+  padding-top: 40px;
+}
+.infoDisplay {
+  margin-left: 40px;
+  margin-top: 30px;
+}
+
+.infoDisplay > div {
+  margin-right: 20px;
+  font-size: 17px;
+}
+.infoTitle {
+  width: 120px;
+}
+.infoTmmateBox {
+  display: flex;
+  gap: 13px;
+  width: 400px;
+  overflow: auto;
+}
+/* Modal Window */
+
+.modalWindow {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  width: 460px;
+  max-width: 90%;
+  height: 500px;
+  max-height: 90%;
+  padding: 1rem;
+  background-color: #fdfdfd;
+}
+
+.clientModalWindow {
+  z-index: 1001;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  width: 500px;
+  max-width: 90%;
+  height: 500px;
+  max-height: 90%;
+  padding: 1rem;
+  background-color: #fdfdfd;
+}
+
+/* Close Button */
+.modalClose,
+.modalConfirmClose {
+  text-align: right;
+  color: gray;
+  cursor: pointer;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.modalClose:hover {
+  color: black;
+}
+.modalTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--second-color);
+}
+.modalContact {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+/* Grid Modal Container */
+.gridModal {
+  top: 10%;
+  left: 10%;
+  display: grid;
+  grid-template-rows: auto auto auto 1fr auto;
+  gap: 1rem;
+  height: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Modal Content */
+.modalContent {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  max-height: 11rem;
+}
+.modalClientContent {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  max-height: 22rem;
+}
+
+/* Modal Text */
+.modalText {
+  color: #333;
+  font-size: 15px;
+}
+.modalClientText {
+  font-size: 15px;
+}
+.modalTextArea {
+  margin-top: 20px;
+  width: 415px;
+  height: 160px;
+}
+.modalTextAreaInfo {
+  margin-top: 20px;
+  width: 375px;
+  overflow-y: auto;
+  height: 130px;
+}
+
+/* Input Space for Buttons */
+.inputSpace {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 12px;
+  cursor: pointer;
+
+  border-radius: 5px;
+  background-color: #ecf0f1;
+  color: #333;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2c3e50;
+  border-color: #2c3e50;
+}
+.calendarContainer {
+  /* margin-left: 70px; */
+  display: flex;
+}
+.calendarMemoContainer {
+  /* border: 1px solid #333; */
+  width: 400px;
+  height: 340px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+.calendarMemoDate {
+  margin-top: 10px;
+  color: var(--second-color);
+  margin-bottom: 20px;
+}
+.calendarMemoContainer > textarea {
+  width: 370px;
+  height: 220px;
+  margin-bottom: 10px;
+}
+.calendarTodo {
+  margin-left: 10px;
+  width: 400px;
+  height: 340px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  /* border: 1px solid #333; */
+}
+.mainCalender {
+  width: 60%;
+}
+.calendarTodo > ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+.todo {
+  padding-left: 20px;
+  padding-bottom: 10px;
+  color: var(--second-color);
+  margin-top: 10px;
+  /* margin-bottom: 20px; */
+  font-size: 16px;
+  font-weight: 600;
+  /* border-bottom: 1px solid #333; */
+}
+.ulContainer > li {
+  list-style: none;
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--light-color);
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+.eventDate {
+  margin-top: 4px;
+  margin-right: 20px;
+  color: var(--dark-color);
+  white-space: nowrap;
+}
+.ulContainer {
+  width: 390px;
+  height: 260px;
+  margin-left: 4px;
+  margin-right: 4px;
+  border-radius: 5px;
+  border: 1px solid var(--light-color);
+  padding: 20px;
+  overflow-y: auto;
+}
+.mainUl {
+  width: 100%;
+}
+.alertMessage {
+  margin-left: 20px;
+  margin-top: 10px;
+  display: block;
+  font-size: 12px;
+  color: red;
+}
+
+.homeIcon {
+  color: var(--second-color);
+  margin: 0;
+  font-size: 16px;
+  position: relative;
+  bottom: -4px;
+}
+
+.homeIcon:hover {
+  color: var(--main-color);
+}
+
+.modifyButtonArea {
+  text-align: right;
+}
+.modifyButtonArea > button {
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+.modalInfoWindow {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  width: 490px;
+  max-width: 90%;
+  height: 400px;
+  max-height: 90%;
+  padding: 1rem;
+  background-color: #fdfdfd;
+}
+.closeInfoModal {
+  width: 400px;
+  text-align: right;
+}
+.infoEmpPhoto {
+  width: 150px;
+  height: 150px;
+}
+.infoEmpPhoto > svg, .infoEmpPhotoImage {
+  width: 80%;
+  height: 80%;
+}
+.infoEmpArea {
+  margin-top: 30px;
+  border-radius: 10px;
+  position: relative;
+  left: 0%;
+  width: 450px;
+  height: 280px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+.infoEmpInfo {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.infoEmpPhoto > svg {
+  width: 80%;
+  height: 80%;
+}
+.infoEmpInfo > div {
+  font-size: 15px;
+}
+.infoEmpInfoFlex {
+  display: flex;
+  align-items: start;
+}
+.infoEmpInfoFlex :first-child {
+  width: 80px;
+}
+.infoEmpInfoFlex > div {
+  text-align: left;
+  width: 200px;
+}
+.infoInputSpace {
+  margin-top: 10px;
+  text-align: right;
+  padding-right: 5px;
+}
+.eventMemo {
+  /* width: 80%; */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

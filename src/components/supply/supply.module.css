@@ -1,0 +1,124 @@
+/* SupplyApp 컴포넌트를 위한 css */
+.supplyAppContainer {
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.tableComponent {
+  flex: 0.5;
+  transition: all 0.3s ease-in-out;
+}
+
+.tableComponent.collapsed {
+  flex: 0.33;
+}
+
+.supplyViewComponent {
+  flex: 0.3;
+  margin-left: 20px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.supplyViewComponent.hidden {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.pointerCursor {
+  cursor: pointer;
+}
+
+/* SupplyApp 버튼을 위한 스타일 */
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* SupplyView 컴포넌트를 위한 css */
+.supplyViewContainer {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.supplyViewHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.supplyViewHeader h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.supplyDetails {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.detailItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.detailItemInline {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.detailItem label {
+  font-weight: bold;
+  color: #333;
+}
+
+.detailItem span {
+  color: #555;
+}
+
+.supplyImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin-bottom: 20px;
+  background-color: #eaeaea;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.supplyImageContainer img {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.supplyImageContainer.enlargedImage {
+  height: 400px;
+}
+
+.loadingText {
+  font-size: 1rem;
+  color: #999;
+}
+
+/* SupplyView 버튼을 위한 스타일 */
+.supplyViewButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}

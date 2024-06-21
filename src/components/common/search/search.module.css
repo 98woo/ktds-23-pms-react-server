@@ -1,0 +1,17 @@
+.flexArray {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  margin-right: 5px;
+}
+.flexArray > svg {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  color: var(--main-color);
+}
+.flexArray > svg:hover {
+  color: var(--second-color);
+}

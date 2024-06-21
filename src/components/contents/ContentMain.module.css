@@ -1,0 +1,296 @@
+.dashboard {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.cont1 {
+  border: 1px solid grey;
+  border-radius: 10px;
+  width: 45%;
+  height: 700px;
+  display: grid;
+  grid-template-rows: 187px 1.5fr 1.5fr;
+  gap: 10px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.cont1Content1 {
+  display: grid;
+  grid-template-columns: 140px 2fr 2fr;
+  gap: 10px;
+  height: 187px;
+}
+
+.myInfoImg {
+  width: 180px;
+  height: 180px;
+
+  border-radius: 100px;
+  margin-right: 40px;
+  margin-left: 20px;
+}
+
+.memoRead {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  align-items: center;
+  color: grey;
+  border-bottom: 1px solid grey;
+  margin: 0 5px;
+}
+
+.memoSpace {
+  padding: 5px 0;
+  margin-left: 5px;
+}
+
+.memoSendInfo {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.memoNotRead {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  align-items: center;
+  border-bottom: 1px solid grey;
+  margin: 0 5px;
+}
+
+.cont1Content3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.cont2 {
+  border: 1px solid grey;
+  border-radius: 10px;
+  width: 45%;
+  height: 700px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.commonDashboardCont {
+  padding: 3px 0 3px 10px;
+  background-color: #fff0f0;
+  border-bottom: 1px solid #777;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+}
+
+.icons {
+  width: 16px;
+  height: 16px;
+}
+
+.icons18px {
+  width: 18px;
+  height: 18px;
+}
+
+/* .border {
+  border: 1px solid grey;
+  border-radius: 10px;
+} */
+
+.heightFit {
+  height: fit-content;
+  width: fit-content;
+}
+
+.fontBold {
+  font-weight: bold;
+}
+
+.font12px {
+  font-size: 12px;
+}
+
+/* ***** component ***** */
+
+.imgCenter {
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ***** grid style ***** */
+.bodyContainer {
+  height: calc(100% - 50px - 50px);
+}
+
+.bodyContentContainer {
+  padding: 15px;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.mainContentHolder {
+  display: grid;
+  row-gap: 16px;
+}
+
+.mainContentHolderRight {
+  display: grid;
+  row-gap: 16px;
+  grid-template-rows: 1fr 1fr 1.5fr;
+}
+
+.mainContentHolderLeft {
+  display: grid;
+  row-gap: 16px;
+  grid-template-rows: 1.5fr 1fr 1fr;
+}
+
+.mainContentHolder {
+  display: grid;
+  row-gap: 16px;
+}
+
+.contentGridOne {
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: 2fr 1fr;
+  column-gap: 16px;
+}
+
+.contentGridOneItem {
+  aspect-ratio: 1;
+}
+
+.contentGridTwo {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 200px;
+  gap: 10px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 1:1 비율 */
+  grid-auto-rows: 1fr; /* 높이를 비율로 설정 */
+  gap: 10px; /* 그리드 간격 */
+  width: 100%; /* 상위 div의 너비에 맞춤 */
+  height: 100%; /* 상위 div의 높이에 맞춤 */
+}
+
+.gridTwoItem {
+  align-items: center;
+  height: 100%; /* 상위 div 높이에 맞춤 */
+  width: 100%; /* 상위 div 너비에 맞춤 */
+}
+
+.gridItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* 상위 div 높이에 맞춤 */
+  width: 100%; /* 상위 div 너비에 맞춤 */
+}
+.gridItem2 {
+  display: grid;
+  grid-template-rows: 0.4fr 0.4fr 1.2fr;
+  gap: 10px; /* 항목 간의 간격 설정 */
+  height: 100%; /* 상위 div의 높이에 맞춤 */
+  width: 100%; /* 상위 div의 너비에 맞춤 */
+}
+
+.subgridTwo {
+  display: grid;
+  row-gap: 16px;
+}
+.subgridTwo2 {
+  display: grid;
+  row-gap: 16px;
+}
+
+.heightFull {
+  height: 100%;
+}
+
+.maxHeight {
+  height: 270px;
+}
+
+@media screen and (max-width: 1200px) {
+  .contentGridone,
+  .contentGridTwo {
+    column-gap: 8px;
+  }
+  .mainContentHolder,
+  .subgridTwo,
+  .subgridTwo2 {
+    row-gap: 8px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contentGridOne {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 8px;
+  }
+  .contentGridTwo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contentGridTwo .gridTwoItem:nth-child(3) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .contentGridTwo .gridTwoItem:nth-child(3) .subgridTwo {
+    grid-template-columns: repeat(2, 1fr);
+    height: 220px;
+    column-gap: 8px;
+  }
+  .contentGridTwo {
+    row-gap: 8px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contentGridOne {
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 0;
+  }
+  .contentGridTwo {
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 0;
+  }
+  .contentGridTwo .gridTwo-Item:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .contentGridTwo .gridTwoItem:nth-child(3) .subgridTwo {
+    grid-template-columns: repeat(1, 1fr);
+    height: auto;
+  }
+  .contentGridTwo .gridTwoItem:nth-child(3) .subgridTwo .subgridTwoItem {
+    height: 220px;
+  }
+}
+.deptFlex {
+  display: flex;
+  overflow: auto;
+  width: 800px;
+  gap: 20px;
+  text-align: center;
+}
+.deptMemberPhoto {
+  background-size: contain;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.deptMemberName {
+  margin: 10px 0;
+  font-weight: 550;
+}

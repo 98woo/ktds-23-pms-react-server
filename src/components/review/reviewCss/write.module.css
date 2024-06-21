@@ -1,0 +1,218 @@
+/* body {
+  background-color: #dfebfb;
+} */
+
+/* WriteReview 에 적용할 CSS */
+.gridContainer {
+  display: grid;
+  justify-content: center;
+}
+
+.prjSubContainer {
+  display: grid;
+  grid-template-rows: 0.1fr 0.06fr 0.06fr;
+  grid-template-columns: 0.1fr 1fr;
+  background-color: white;
+  border-radius: 7px;
+  border-top: 10px solid #3a7ded;
+  width: 600px;
+  height: 300px;
+}
+
+.writeReviewContainer {
+  display: grid;
+  grid-template-rows: 0.06fr 0.5fr;
+  grid-template-columns: 0.1fr 1fr;
+  background-color: white;
+  border-radius: 7px;
+  width: 600px;
+  height: 450px;
+}
+
+.projectReview {
+  display: grid;
+  align-items: center;
+  font-size: 27px;
+  font-weight: 300;
+  height: 120px;
+}
+
+.projectSub {
+  color: #999999;
+  font-size: 16px;
+  height: 30px;
+}
+
+.writeReviewSpan {
+  display: grid;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 5px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.writeReviewStar {
+  display: grid;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 5px;
+  padding-top: 25px;
+  padding-bottom: 5px;
+}
+
+.writeReviewPtag {
+  padding-top: 10px;
+}
+
+.writeReviewText {
+  width: 90%;
+  border: 2px solid #3a7ded;
+  height: 200px;
+}
+
+.writeReviewText.action {
+  border: solid 1px red;
+}
+
+.submitBtnContainer {
+}
+
+.submitBtn {
+  margin-top: 15px;
+  border-radius: 5px;
+  width: 80px;
+  height: 40px;
+  background-color: #3a7ded;
+  color: #dfebfb;
+  border: 0;
+}
+
+.footer {
+  display: grid;
+  justify-items: center;
+}
+
+.PMSreview {
+  font-size: 30px;
+  color: #d1d1d1;
+  margin-top: 100px;
+}
+
+/* ViewReview 에 적용할 CSS */
+.reviewResultContainer {
+}
+
+.reviewResultProjectContainer {
+  background-color: lightgray;
+}
+
+.starRating {
+  display: flex;
+  direction: ltr;
+}
+
+.star {
+  cursor: pointer;
+  position: relative;
+  font-size: 2rem;
+}
+
+.starIcon {
+  color: #d3d3d3;
+  transition: color 0.2s;
+}
+
+.starIcon.gold {
+  color: gold;
+}
+
+.half {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  cursor: pointer;
+}
+
+.leftHalf {
+  left: 0;
+}
+
+.rightHalf {
+  right: 0;
+}
+
+.fullStar {
+  color: gold;
+}
+
+.halfStar {
+  color: gold;
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+}
+
+/* ViewReview CSS */
+.userIcon {
+  height: 1.7em;
+  width: 1.7em;
+}
+
+.userIconContainer {
+  display: grid;
+  justify-content: center;
+  margin-top: 7px;
+}
+
+.reviewResultInfo {
+  display: grid;
+  grid-template-columns: repeat(3, 0.5fr);
+  align-items: center;
+  justify-items: center;
+  height: 150px;
+  background-color: #ecf0f5;
+}
+
+.reviewResultInfoItems {
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  font-weight: 300;
+}
+
+.reviewResultInfoItemsContent {
+  font-size: 30px;
+}
+
+.reviewResultStarFlex {
+  display: flex;
+  align-items: center;
+}
+
+.reviewResultContainer {
+  display: grid;
+  grid-template-columns: 0.05fr 1fr;
+  border-bottom: solid 1px #ccc;
+  gap: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.reviewResultContent {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+}
+
+.starRatingPosition {
+  position: relative;
+  left: 10px;
+  font-weight: 600;
+}
+
+.buttonStyle {
+  width: 65px;
+  margin: 0;
+  margin-bottom: 10px;
+}
