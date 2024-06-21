@@ -1,4 +1,7 @@
+Origin 
 https://github.com/jaehyoun100/ktds-23-pms-react
+
+프로젝트 종료 후 연습을 위해 fork 하지 않음
 
 
 
