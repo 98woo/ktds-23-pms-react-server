@@ -8,7 +8,8 @@ export default function IssueMain() {
     issueList: [],
     isPmAndPl: [],
   });
-  const url = "43.202.29.221";
+  // const url = "43.202.29.221";
+  const url = "http://localhost:8080";
   const [teamList, setTeamList] = useState();
   const [userData, setUserData] = useState();
   const token = localStorage.getItem("token");

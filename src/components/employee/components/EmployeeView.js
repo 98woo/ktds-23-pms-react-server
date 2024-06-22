@@ -16,7 +16,8 @@ import HistoryTable from "./HistoryTable";
 
 const { Title } = Typography;
 
-const url = "http://43.202.29.221";
+// const url = "http://43.202.29.221";
+const url = "http://localhost:8080";
 
 const keyText = {
   depart: "부서",

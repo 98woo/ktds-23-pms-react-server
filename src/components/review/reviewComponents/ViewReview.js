@@ -19,7 +19,7 @@ export default function ViewReview() {
   const [reviewResult, setReviewResult] = useState([]);
   const [avgStarRating, setAvgStarRating] = useState([]);
   const userInfo = jwtDecode(token);
-  const navigate = useNavigate();
+  const [reload, setReload] = useState(0);
 
   useEffect(() => {
     const loadData = async () => {
@@ -43,7 +43,7 @@ export default function ViewReview() {
       const response = await deleteReview(token, rvId, prjId);
     };
     doDelete();
-    navigate("/project");
+    setReload(Math.random());
   };
   return (
     <>

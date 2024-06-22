@@ -1,7 +1,8 @@
 import { approvalActions } from "../store/toolkit/slice/approvalSlice";
 import { tokenExpire } from "../utils/loginUtil";
 
-const url = "http://43.202.29.221";
+// const url = "http://43.202.29.221";
+const url = "http://localhost:8080";
 
 /**
  * 승인 요청자의 승인요청을 가져오는 fetch 함수를 표시 함

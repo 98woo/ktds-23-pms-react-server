@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
-const url = "http://43.202.29.221";
+// const url = "http://43.202.29.221";
+const url = "http://localhost:8080";
 
 // 프로젝트 id 통해 해당 프로젝트 가져오는 API
 export const getPrjApi = async (token, projectId) => {

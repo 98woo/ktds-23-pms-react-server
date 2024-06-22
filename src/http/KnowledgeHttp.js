@@ -1,4 +1,5 @@
-const url = "http://43.202.29.221";
+// const url = "http://43.202.29.221";
+const url = "http://localhost:8080";
 
 // 리스트
 export const loadknowledgeList = async ({ token, pageNo = 0 }) => {

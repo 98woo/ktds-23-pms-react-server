@@ -1,4 +1,5 @@
-const url = "43.202.29.221";
+// const url = "43.202.29.221";
+const url = "http://localhost:8080";
 
 //이슈 리스트
 export const loadIssueList = async ({ token, pageNo = 0 }) => {

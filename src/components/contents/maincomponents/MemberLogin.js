@@ -13,7 +13,8 @@ const MemberLogin = () => {
       credentialsExpired: state.tokenInfo.credentialsExpired,
     };
   });
-  const url = "http://43.202.29.221";
+  // const url = "http://43.202.29.221";
+  const url = "http://localhost:8080";
   const userData = jwtDecode(tokenInfo.token).user;
   useEffect(() => {
     const getEmpData = async () => {

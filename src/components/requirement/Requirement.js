@@ -9,7 +9,8 @@ import MainHeader from "../project/main/MainHeader";
 import styles from "./requirement.module.css";
 
 export default function Requirement() {
-  const url = "http://43.202.29.221";
+  // const url = "http://43.202.29.221";
+  const url = "http://localhost:8080";
 
   const [requirement, setRequirement] = useState({
     requirementList: [],

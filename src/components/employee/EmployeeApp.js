@@ -7,7 +7,8 @@ import { handleRegistEmployee, loadData } from "../../http/employeeHttp";
 import dayjs from "dayjs";
 import axios from "axios";
 
-const url = "http://43.202.29.221";
+// const url = "http://43.202.29.221";
+const url = "http://localhost:8080";
 
 const defaultValues = {
   empName: "",

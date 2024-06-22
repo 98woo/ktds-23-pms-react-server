@@ -22,7 +22,8 @@ export function MainEmployeeImg() {
   );
 }
 export function MainEmployee() {
-  const url = "http://43.202.29.221";
+  // const url = "http://43.202.29.221";
+  const url = "http://localhost:8080";
   const dispatch = useDispatch();
   const { token } = useSelector((state) => state.tokenInfo);
   const [userInfo, setUserInfo] = useState();
