@@ -8,7 +8,8 @@ import { tokenExpire } from "../../utils/loginUtil";
 import profileImg from "./profile_icon.png";
 
 export default function Sidebar({ menus = [] }) {
-  const url = "http://43.202.29.221";
+  // const url = "http://43.202.29.221";
+  const url = "http://localhost:8080";
   const dispatch = useDispatch();
   const [closeSideBar, setCloseSideBar] = useState(false);
   // console.log(closeSideBar);

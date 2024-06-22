@@ -1,4 +1,5 @@
-const url = "http://43.202.29.221";
+// const url = "http://43.202.29.221";
+const url = "http://localhost:8080";
 
 export const loadOutputs = async (token, prjIdValue) => {
   if (!token) {

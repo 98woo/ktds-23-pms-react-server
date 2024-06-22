@@ -13,7 +13,8 @@ import styles from "./output.module.css";
 import AlertModal from "../common/modal/AlertModal";
 
 export default function Output() {
-  const url = "http://43.202.29.221";
+  // const url = "http://43.202.29.221";
+  const url = "http://localhost:8080";
 
   const [output, setOutput] = useState({
     outputList: [],

@@ -14,7 +14,8 @@ export default function RequirementView() {
     requirement: [],
     isPmAndPl: [],
   });
-  const url = "43.202.29.221";
+  // const url = "43.202.29.221";
+  const url = "http://localhost:8080";
   const [isModifyMode, setIsModifyMode] = useState(false);
   const [needReloadDetail, setNeedReloadDetail] = useState();
   const token = localStorage.getItem("token");

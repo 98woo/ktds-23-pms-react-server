@@ -5,7 +5,8 @@
 import { commuteActions } from "../store/toolkit/slice/commuteSlice";
 import { tokenExpire } from "../utils/loginUtil";
 
-const url = "http://43.202.29.221";
+// const url = "http://43.202.29.221";
+const url = "http://localhost:8080";
 
 export const getCommuteLog = (
   token,

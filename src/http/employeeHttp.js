@@ -1,6 +1,7 @@
 import { Modal, message } from "antd";
 
-const url = "http://43.202.29.221";
+// const url = "http://43.202.29.221";
+const url = "http://localhost:8080";
 
 export const loadData = async ({ token }) => {
   if (!token) {

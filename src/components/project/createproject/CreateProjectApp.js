@@ -8,7 +8,8 @@ import { useSelector } from "react-redux";
 import { useNavigate } from "react-router";
 import CreateClientModal from "./CreateClientModal";
 const CreateProjectApp = () => {
-  const url = "http://43.202.29.221";
+  // const url = "http://43.202.29.221";
+  const url = "http://localhost:8080";
   const [isAddClient, setIsAddClient] = useState(false);
   const prjNameRef = useRef();
   const prjMemoRef = useRef();
